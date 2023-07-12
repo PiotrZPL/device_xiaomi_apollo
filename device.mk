@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2021 The ArrowOS Project
+# Copyright (C) 2023 Piotr Lange
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -32,7 +33,7 @@ PRODUCT_PACKAGES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-arrow
+    $(LOCAL_PATH)/overlay-lineage
 
 # Shims
 PRODUCT_PACKAGES += \
