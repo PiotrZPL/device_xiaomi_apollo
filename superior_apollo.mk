@@ -15,7 +15,10 @@ $(call inherit-product, device/xiaomi/apollo/device.mk)
 # Inherit some common SuperiorOS stuff.
 $(call inherit-product, vendor/superior/config/common.mk)
 
+# SuperiorOS flags
+# BUILD_WITH_GAPPS := true # Uncomment to build with GAPPS
 TARGET_GAPPS_ARCH := arm64
+
 IS_PHONE := true
 DEVICE_MAINTAINER := PiotrZPL
 
