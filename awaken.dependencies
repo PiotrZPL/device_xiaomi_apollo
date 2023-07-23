@@ -2,26 +2,31 @@
   {
     "remote": "github",
     "repository": "PiotrZPL/device_xiaomi_sm8250-common",
+    "branch": "awaken-13",
     "target_path": "device/xiaomi/sm8250-common"
   },
   {
     "remote": "github",
     "repository": "PiotrZPL/vendor_xiaomi_apollo",
+    "branch": "awaken-13",
     "target_path": "vendor/xiaomi"
   },
   {
     "remote": "github",
     "repository": "PiotrZPL/kernel_xiaomi_sm8250",
+    "branch": "awaken-13",
     "target_path": "kernel/xiaomi/sm8250"
   },
   {
     "remote": "github",
     "repository": "PiotrZPL/packages_apps_GCamGOPrebuilt",
+    "branch": "awaken-13",
     "target_path": "packages/apps/GCamGOPreBuilt"
   },
   {
     "remote": "gitlab",
     "repository": "PiotrZPL/vendor_xiaomi-firmware_apollo",
+    "branch": "awaken-13",
     "target_path": "vendor/xiaomi-firmware/apollo"
   }
 ]

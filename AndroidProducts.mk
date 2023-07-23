@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/superior_apollo.mk
+    $(LOCAL_DIR)/awaken_apollo.mk
 
 COMMON_LUNCH_CHOICES := \
-    superior_apollo-user \
-    superior_apollo-userdebug \
-    superior_apollo-eng
+    awaken_apollo-user \
+    awaken_apollo-userdebug \
+    awaken_apollo-eng
