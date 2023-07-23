@@ -1,6 +1,7 @@
 # Copyright (C) 2009 The Android Open Source Project
 # Copyright (c) 2011, The Linux Foundation. All rights reserved.
 # Copyright (C) 2017-2018 The LineageOS Project
+# Copyright (C) 2023 Piotr Lange
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -45,7 +46,6 @@ def AddImageRadio(info, basename, dest):
 def OTA_InstallEnd(info):
   info.script.Print("Patching firmware images...")
   AddImage(info, "dtbo.img", "/dev/block/bootdevice/by-name/dtbo")
-  AddImage(info, "recovery.img", "/dev/block/bootdevice/by-name/recovery")
   AddImage(info, "vbmeta.img", "/dev/block/bootdevice/by-name/vbmeta")
   AddImage(info, "vbmeta_system.img", "/dev/block/bootdevice/by-name/vbmeta_system")
 
