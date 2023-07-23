@@ -19,6 +19,12 @@
   },
   {
     "remote": "github",
+    "repository": "PiotrZPL/hardware_xiaomi",
+    "branch": "awaken-13",
+    "target_path": "hardware/xiaomi"
+  },
+  {
+    "remote": "github",
     "repository": "PiotrZPL/packages_apps_GCamGOPrebuilt",
     "branch": "awaken-13",
     "target_path": "packages/apps/GCamGOPreBuilt"
