@@ -23,7 +23,6 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 # Camera
 PRODUCT_PACKAGES += \
-    libMegviiFacepp-0.5.2 \
     libmegface
 
 # Notchbar killer

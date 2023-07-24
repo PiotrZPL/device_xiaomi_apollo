@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/superior_apollo.mk
+    $(LOCAL_DIR)/lineage_apollo.mk
 
 COMMON_LUNCH_CHOICES := \
-    superior_apollo-user \
-    superior_apollo-userdebug \
-    superior_apollo-eng
+    lineage_apollo-user \
+    lineage_apollo-userdebug \
+    lineage_apollo-eng
