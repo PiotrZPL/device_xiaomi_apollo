@@ -12,8 +12,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from apollo device
 $(call inherit-product, device/xiaomi/apollo/device.mk)
 
-# Inherit some common SuperiorOS stuff.
-$(call inherit-product, vendor/superior/config/common.mk)
+# Inherit some common AwakenOS stuff.
+$(call inherit-product, vendor/awaken/config/common_full_phone.mk)
 
 PRODUCT_CHARACTERISTICS := nosdcard
 
