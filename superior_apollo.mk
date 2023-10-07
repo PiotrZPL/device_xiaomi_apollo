@@ -15,14 +15,22 @@ $(call inherit-product, device/xiaomi/apollo/device.mk)
 # Inherit some common SuperiorOS stuff.
 $(call inherit-product, vendor/superior/config/common.mk)
 
+# Inherit Miui Camera
+$(call inherit-product-if-exists, vendor/xiaomi/apollo-miuicamera/products/miuicamera.mk)
+
 # SuperiorOS flags
-# BUILD_WITH_GAPPS := true # Uncomment to build with GAPPS
+BUILD_WITH_GAPPS := true
 TARGET_GAPPS_ARCH := arm64
+TARGET_HAS_UDFPS := false
 
 IS_PHONE := true
 DEVICE_MAINTAINER := PiotrZPL
 
 PRODUCT_CHARACTERISTICS := nosdcard
+
+WITH_GMS := true
+WITH_GAPPS := true
+TARGET_USE_GOOGLE_TELEPHONY := true
 
 PRODUCT_NAME := superior_apollo
 PRODUCT_DEVICE := apollo

@@ -45,6 +45,14 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+    
+# Camera Extensions
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.camerax.extensions.enabled=true
+
+# Camera Extensions permissions
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/permissions/camerax-vendor-extensions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/camerax-vendor-extensions.xml
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/apollo/apollo-vendor.mk)
