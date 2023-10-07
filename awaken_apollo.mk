@@ -15,7 +15,16 @@ $(call inherit-product, device/xiaomi/apollo/device.mk)
 # Inherit some common AwakenOS stuff.
 $(call inherit-product, vendor/awaken/config/common_full_phone.mk)
 
+# Inherit Miui Camera
+$(call inherit-product-if-exists, vendor/xiaomi/apollo-miuicamera/products/miuicamera.mk)
+
 PRODUCT_CHARACTERISTICS := nosdcard
+BUILD_WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
+TARGET_HAS_UDFPS := false
+WITH_GMS := true
+WITH_GAPPS := true
+TARGET_USE_GOOGLE_TELEPHONY := true
 
 PRODUCT_NAME := awaken_apollo
 PRODUCT_DEVICE := apollo
