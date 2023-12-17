@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2021 The ArrowOS Project
+# Copyright (C) 2023 Piotr Lange
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -12,24 +13,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/apollo/device.mk)
 
 # Inherit some common Linag stuff.
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+$(call inherit-product, vendor/awaken/config/common_full_phone.mk)
 
-# Rom Specific Flags
-TARGET_INCLUDE_WIFI_EXT := true
-TARGET_BOOT_ANIMATION_RES := 1080
-PRODUCT_CHARACTERISTICS := nosdcard
-TARGET_FACE_UNLOCK_SUPPORTED := false
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_DISABLE_EPPE := true
-
-WITH_GMS := true
-WITH_GAPPS := true
-
-CHERISH_MAINTAINER := KamiKaonashi
-CHERISH_CHIPSET := Snapdragon865
-
-PRODUCT_NAME := cherish_apollo
+PRODUCT_NAME := awaken_apollo
 PRODUCT_DEVICE := apollo
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi

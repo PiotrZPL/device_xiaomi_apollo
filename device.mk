@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2023 Piotr Lange
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -51,6 +52,9 @@ PRODUCT_COPY_FILES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-aosp
+
+PRODUCT_PACKAGES += \
+    ApolloSettingsOverlay
 
 # Shims
 PRODUCT_PACKAGES += \
